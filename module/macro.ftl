@@ -54,13 +54,13 @@
 		<!-- Copyright -->
 		<div class="copyright">
 			<#if settings.copyright?? && settings.copyright!=''>
-				<p>
+				<p class="copyright">
 					&copy; ${settings.copyright!}
 				</p>
 			</#if>
 			<#if settings.icp_filing?? && settings.icp_filing!=''>
-				<p>
-						${settings.icp_filing!}
+				<p class="icp_filing">
+					${settings.icp_filing!}
 				</p>
 			</#if>
 		</div>
