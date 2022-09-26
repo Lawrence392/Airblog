@@ -51,7 +51,7 @@ header.header .navbar div.container {
 nav.navbar div.container a {
 	font-size: 1rem;
 	font-weight: 400;
-	color: #ecad9e;
+	color: var(--orange);
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -100,14 +100,14 @@ section.dailypic div.elementor-container-left {
 	align-content: center;
 	align-items: flex-start;
 	margin: auto 5% auto 10%;
-	width: 35%;
-	min-width: 300px;
+	width: 32%;
+	/* min-width: 300px; */
 }
 
 
 
 section.dailypic div.name {
-	margin: 0 0 10px 0;
+	margin: 0 0 0.625rem 0;
 	padding: 0.5rem 1rem 0.5rem 1rem;
 	background: var(--orange);
 }
@@ -134,7 +134,7 @@ section.dailypic div.links {
 }
 
 section.dailypic div.links a {
-	color: #ecad9e;
+	color: var(--orange);
 	padding: 0 0.3rem;
 	text-decoration: none;
 }
@@ -222,15 +222,25 @@ section.dailypic div.figure img {
 	}
 	
 	section.dailypic div.elementor-container-left {
-		font-size: 1rem;
+		font-size: 0.5rem;
 		margin: 5rem 50% 0 15%;
 		flex-wrap: nowrap;
+		width: 70%;
 	}
 	
 	section.dailypic div.elementor-container-left h1 {
-		font-size: 2rem;
+		font-size: 1.5rem;
+	}
+
+	section.dailypic div.name {
+		padding: 0.5rem;
 	}
 	
+	section.dailypic div.name h2 {
+		font-size: 1rem;
+		font-weight: bold;
+		letter-spacing: normal;
+	}
 }
 
 
@@ -238,9 +248,8 @@ section.dailypic div.figure img {
 /* title */
 #main{
 	/* max-width: 1280px; */
-	min-width: 420px;
+	/* min-width: 420px; */
 	/* min-height: 730px; */
-	background: var(-);
 	/* display: flex; */
 	/* flex-direction: row; */
 }
@@ -337,7 +346,9 @@ section.dailypic div.figure img {
 
 
 @media screen and ((aspect-ratio < 4/5)) {
-	
+	#main div.head-line{
+		padding: 60px 0 40px 0;
+	}
 	
 }
 
@@ -383,7 +394,7 @@ section.dailypic div.figure img {
 
 #main article.post div.major h2 a{
 	font-size: 24px;
-	color: #000000d4;
+	color: var(--orange);
 	text-decoration: none;
 	cursor: pointer;
 	width: 100%;
@@ -445,7 +456,7 @@ section.dailypic div.figure img {
 
 	#main div.elementor-post {
 		flex-direction: column;
-		width: 80%;
+		width: 85%;
 	}
 
 	#main div.elementor-post article.post {

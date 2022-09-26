@@ -63,12 +63,7 @@
                     </#if>
 
                     <div class="major">
-
                         <h2><a href="${post.fullPath!}">${post.title!}</a></h2>
-                        
-
-                        
-                        
                         <p><a href="${post.fullPath!}">${post.summary!}</a></p>
                         
 
