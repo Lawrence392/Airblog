@@ -234,7 +234,7 @@ section.dailypic div.figure img {
 	/* max-width: 1280px; */
 	min-width: 420px;
 	/* min-height: 730px; */
-	background: #fffafe4d;
+	background: #ffffff;
 	/* display: flex; */
 	/* flex-direction: row; */
 }
@@ -288,8 +288,9 @@ section.dailypic div.figure img {
 	align-items: center;
 	position: relative;
 	border-radius: 12px;
-	background: #efefef75;
-	/* overflow: hidden; */
+	background: #ffffff;
+	box-shadow: 0 0rem 1rem #afafaf26;
+	overflow: hidden;
 }
 
 #main article.post div.photo-frame {
