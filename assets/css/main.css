@@ -426,6 +426,10 @@ section.dailypic div.figure img {
 	#main> article.post div.major p {
 		margin: 0;
 	}
+
+	#main> article.post div.major div.label i {
+	    font-size: 14px;
+	}
 }
 
 
