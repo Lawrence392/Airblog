@@ -37,30 +37,27 @@
     </div>
 
 <#--  posts  -->
-
+<div class="elementor-post">
     <#list posts.content as post>
             <article class="post">
                 <div class="featured">
 
                     <#if post.thumbnail?? && post.thumbnail!=''>
-                    <div class="photo-frame">
-                        <div class="thumbnail">
-                                <a href="${post.fullPath!}">
-                                    <img src="${post.thumbnail!}" alt="">
-                                </a>
-                        </div>
-                        <div class="times">
-                            <span class="date">${post.createTime?string("yyyy-MM-dd")}</span>
-                        </div>
+                    <div class="thumbnail">
+                        <a href="${post.fullPath!}">
+                            <img src="${post.thumbnail!}" alt="">
+                        </a>
                     </div>
+
+                    <#--  <div class="times">
+                        <span class="date">${post.createTime?string("yyyy-MM-dd")}</span>
+                    </div>  -->
                     
                     <#else>
-                        <div class="photo-frame">
-                            <div class="thumbnail">
-                                <a href="${post.fullPath!}">
-                                    <img src="${theme_base!}/assets/images/404.png" alt="">
-                                </a>
-                            </div>
+                        <div class="thumbnail">
+                            <a href="${post.fullPath!}">
+                                <img src="${theme_base!}/assets/images/404.png" alt="">
+                            </a>
                         </div>
 
                     </#if>
@@ -84,7 +81,7 @@
                 </div>
             </article>
     </#list>
-
+</div>
 
 <#--  paginationTag  -->
 

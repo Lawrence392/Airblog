@@ -24,7 +24,7 @@ header.header .navbar {
 	line-height: 4rem;
 	width: 100%;
 	/* max-width: 1200px; */
-	background-color: #0000000a;
+	background-color: #00000000;
 	position: fixed;
 	z-index: 3;
 }
@@ -32,11 +32,10 @@ header.header .navbar {
 header.header .navbar div.container {
 	display: flex;
 	justify-content: space-between;
-
 	padding-left: 5%;
 	padding-right: 5%;
 	margin: 0 auto;
-	width: auto;
+	/* width: auto; */
 	text-align: center;
 }
 
@@ -157,19 +156,34 @@ section.dailypic div.figure img {
 @media screen and ((aspect-ratio < 1/1)) {
 	section.dailypic div.figure {
 	    display: flex;
-	    width: 35%;
-	    margin: 0 25% 2rem 40%;
+	    width: 50%;
+	    margin: 0 2rem 2rem 0rem;
 	    /* float: right; */
 	    /* justify-content: flex-end; */
 	    /* text-align: right; */
 	    /* align-items: flex-end; */
 	    justify-content: flex-end;
 	}
+	section.dailypic div.elementor-container {
+		min-height: 600px;
+		/* width: 100%; */
+		display: flex;
+		flex-direction: column;
+		margin-right: auto;
+		margin-left: auto;
+		position: relative;
+		/* -webkit-box-align: center; */
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
 	section.dailypic div.elementor-container-left {
 		font-size: 1rem;
-		margin: auto 5%;
+		margin: 5rem 50% 0 15%;
 		flex-wrap: nowrap;
 	}
+	
 	section.dailypic div.elementor-container-left h1 {
 		font-size: 2rem;
 	}
@@ -179,8 +193,8 @@ section.dailypic div.figure img {
 @media screen and ((aspect-ratio < 4/5)) {
 	section.dailypic div.figure {
 	    display: flex;
-	    width: 35%;
-	    margin: 0 25% 2rem 40%;
+	    width: 50%;
+	    margin: 0 2rem 2rem 0rem;
 	    /* float: right; */
 	    /* justify-content: flex-end; */
 	    /* text-align: right; */
@@ -220,16 +234,19 @@ section.dailypic div.figure img {
 	/* max-width: 1280px; */
 	min-width: 420px;
 	/* min-height: 730px; */
+	background: #fffafe4d;
+	/* display: flex; */
+	/* flex-direction: row; */
 }
 
-#main> div.head-line {
+#main div.head-line {
 	text-align: center;
 	padding: 120px 0 60px 0;
 }
 
-#main> div.head-line h1 {
+#main div.head-line h1 {
 	font-family: "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 64px;
+	font-size: 3rem;
 	font-weight: 600;
 	color: var(--orange);
 	letter-spacing: 2px;
@@ -238,91 +255,97 @@ section.dailypic div.figure img {
 
 
 /* posts */
-
-
-#main> article.post {
+#main div.elementor-post {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 75%;
+	margin: 2rem auto;
+}
+
+#main article.post {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-content: center;
-	margin: 4rem auto;
+	margin: 2rem auto;
 	padding: 0;
-	width: 70vw;
-	height: 55vh;
+	width: calc(50% - 3rem);
+	height: 24rem;
 	position: relative;
 	opacity: 1;
 }
 
-#main> article.post div.featured {
+#main article.post div.featured {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	/* flex-wrap: wrap; */
-	flex-direction: row;
-	margin-right: auto;
-	margin-left: auto;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 	position: relative;
+	border-radius: 12px;
+	background: #efefef75;
+	/* overflow: hidden; */
 }
 
-#main> article.post div.photo-frame {
+#main article.post div.photo-frame {
 	display: flex;
 	justify-content: center;
 	align-items:
 	center;
 	flex-direction: column;
-	width: 40%;
-	height: 90%;
-	padding-top: 1%;
-	padding-left: 1%;
-	padding-right: 1%;
-	padding-bottom: 1%;
-	/* padding: 0 14px 0 14px; */
-	/* border: 0.5px solid #0000005c; */
-	box-shadow: 0 0 10px var(--shadow);
-	transition: all 0.5s ease;
+	height: 40%;
 	
 	}
 
-#main> article.post div.photo-frame:hover {
+#main article.post div.photo-frame:hover {
 	transform: scale(1.02);
 	transition: all 0.5s ease;
 	
 }
 
 
-#main> article.post div.thumbnail {
-    display: flex;
-	position: relative;
-	
-	width: 96%;
-	height: 75%;
+#main article.post div.thumbnail {
+    /* display: flex; */
+    position: relative;
 }
 
-#main> article.post div.thumbnail {
-	justify-content: center;
-	flex-direction: column;
-	/* border-left: 14px solid white;
-	border-right: 14px solid white;
-	border-top: 14px solid white;
-	border-bottom: 50px solid white; */
-	box-sizing: border-box;
-	/* box-shadow: 0 0 5px var(--shadow); */
+#main article.post div.thumbnail {
+	height: 48%;
+	/* justify-content: center; */
+	/* flex-direction: column; */
+	/* box-sizing: border-box; */
+	border-radius: 12px 12px 0 0;
 	overflow: hidden;
 }
 
-
-#main> article.post img {
+#main article.post div.thumbnail a {
+	object-fit: cover;
+	height: 100%;
+}
+#main article.post img {
 	position: relative;
+	/* height: 0; */
 	width: 100%;
-	display: inline-block;
+	padding: 0 0 10rem 0;
 	object-fit: cover;
 }
 
 
-#main> article.post img{overflow: hidden;}
+
+@media screen and ((aspect-ratio < 4/5)) {
+	
+	
+}
+
+
+
 /* times */
-#main> article.post div.times {
+#main article.post div.times {
 	display: flex;
 	
 	justify-content: center;
@@ -331,7 +354,7 @@ section.dailypic div.figure img {
 	height: 20%;
 }
 
-#main> article.post div.times span.date {
+#main article.post div.times span.date {
 	font-size: 46px;
 	font-weight: 200;
 	font-family: Gabriola,"SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -345,22 +368,22 @@ section.dailypic div.figure img {
 
 /* major */
 
-#main> article.post div.major {
+#main article.post div.major {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: self-end;
-	width: 40%;
-	margin: 0px 0 10% 13%;
+	width: 85%;
+	margin: 1rem 0 0 0;
 }
 
-#main> article.post div.major h2{
-	margin: 16px 0 16px 0;
+#main article.post div.major h2{
+	margin: 1rem 0;
 	width: 100%;
 }
 
-#main> article.post div.major h2 a{
-	font-size: 30px;
+#main article.post div.major h2 a{
+	font-size: 24px;
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
@@ -371,18 +394,18 @@ section.dailypic div.figure img {
 	outline: 0;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 1;
 	text-overflow: ellipsis;
 }
 
-#main> article.post div.major p{
-	margin: 16px 0 16px 0;
+#main article.post div.major p{
+	margin: 0px 0 1rem 0;
 	width: 100%;
 	/* display: flex; */
 	/* align-items: self-end; */
 }
 
-#main> article.post div.major p a{
+#main article.post div.major p a{
 	overflow: hidden;
 	max-height: 8rem;
 	font-size: 16px;
@@ -392,50 +415,71 @@ section.dailypic div.figure img {
 	cursor: pointer;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 4;
+	-webkit-line-clamp: 2;
 	text-overflow: ellipsis;
+	margin: 1rem 0;
 }
 
+#main article.post div.major div.label {
+	float: right;
+	display: block;
+	/* margin: 0.5rem 0; */
+}
 
-
-#main> article.post div.major div.label i {
-	font-size: 20px;
-	color: #565656;
+#main article.post div.major div.label i {
+	font-size: 14px;
+	color: #c2c2c2;
 }
 
 
 
 @media screen and ((aspect-ratio < 4/5)) {
-	#main> div.head-line h1 {
+	#main div.head-line h1 {
 		font-size: 2rem;
 	}
 
-	#main> article.post div.featured {
+	#main article.post div.featured {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
+
+	#main div.elementor-post {
+		flex-direction: column;
+		width: 80%;
+	}
+
+	#main div.elementor-post article.post {
+		width: 90%;
+	}
+
 	
-	#main> article.post div.photo-frame {
+	#main article.post div.photo-frame {
 		width: 100%;
 	}
-	#main> article.post div.major {
-		width: 90%;
+	#main article.post div.major {
+		width: calc(100% - 3rem);
 		margin: 0;
 	}
-	#main> article.post div.major p {
+	#main article.post div.major p {
 		margin: 0;
 	}
 
-	#main> article.post div.major div.label i {
+	#main article.post div.major div.label i {
 	    font-size: 14px;
 	}
+
+
+
+
+
+	
 }
 
 
 /* pagination */
 
-#main> ul.pagination {
+#main ul.pagination {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -443,19 +487,19 @@ section.dailypic div.figure img {
 	padding: 0 0rem 4rem 0rem;
 }
 
-#main> ul.pagination li {
+#main ul.pagination li {
 	padding: 0 1rem 0 1rem;
 
 	
 }
 
-#main> ul.pagination li div.point {
+#main ul.pagination li div.point {
 	background-color: #ffd59d;
 	border: 7px solid #ffd59d;
 	border-radius: 100%;
 }
 
-#main> ul.pagination span.current div.point {
+#main ul.pagination span.current div.point {
 	background-color: var(--brown);
 	border: 7px solid var(--brown);
 }
