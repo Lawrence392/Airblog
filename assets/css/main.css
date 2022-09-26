@@ -195,8 +195,9 @@ section.dailypic div.figure img {
 	}
 	
 }
+/*--*/
 
-@media screen and ((aspect-ratio < 4/5)) {
+@media screen and ((aspect-ratio < 1/1)) {
 	section.dailypic div.figure {
 	    display: flex;
 	    width: 50%;
@@ -344,8 +345,8 @@ section.dailypic div.figure img {
 }
 
 
-
-@media screen and ((aspect-ratio < 4/5)) {
+/*--*/
+@media screen and ((aspect-ratio < 1/1)) {
 	#main div.head-line{
 		padding: 60px 0 40px 0;
 	}
@@ -442,10 +443,11 @@ section.dailypic div.figure img {
 }
 
 
+/*--*/
 
-@media screen and ((aspect-ratio < 4/5)) {
+@media screen and ((aspect-ratio < 1/1)) {
 	#main div.head-line h1 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	#main article.post div.featured {
