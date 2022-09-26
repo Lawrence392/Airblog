@@ -1,0 +1,441 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url(root.css);
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	transition: all 0.5s ease;
+	width: 100%;
+	/* font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, sans-serif; */
+}
+
+/* Header */
+
+header.header {
+	display: block;
+}
+
+header.header .navbar {
+	height: 4rem;
+	line-height: 4rem;
+	width: 100%;
+	/* max-width: 1200px; */
+	background-color: #0000000a;
+	position: fixed;
+	z-index: 3;
+}
+
+header.header .navbar div.container {
+	display: flex;
+	justify-content: space-between;
+
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 0 auto;
+	width: auto;
+	text-align: center;
+}
+
+
+
+
+nav.navbar div.container a {
+	font-size: 1rem;
+	font-weight: 400;
+	color: #ecad9e;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+nav.navbar div.container a:hover {
+	color: var(--darkpurple);
+}
+
+nav.navbar div.container div.headerlogo a {
+	font-size: 1.25rem;
+	font-weight: bolder;
+}
+
+nav.navbar div.container div.menulist a {
+	padding: 0 0.5rem 0 0.5rem;
+}
+
+
+
+/* dailypic */
+section.dailypic {
+	background-color: var(--brown);
+	/* width: 100%; */
+	/*seet it to the screen */
+}
+
+section.dailypic div.elementor-container {
+	display: flex;
+	/* flex-direction: column; */
+	max-width: 1280px;
+	min-height: 730px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	/* -webkit-box-align: center; */
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section.dailypic div.elementor-container-left {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: flex-start;
+	margin: auto 5% auto 10%;
+	width: 35%;
+	min-width: 300px;
+}
+
+
+
+section.dailypic div.name {
+	margin: 0 0 10px 0;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	background: var(--orange);
+}
+
+
+section.dailypic div.name h2 {
+	color: white;
+	letter-spacing: 3px;
+	font-size: 30px;
+	font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+section.dailypic div.elementor-container-left h1 {
+	font-family: "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 3rem;
+	font-weight: 600;
+	color: var(--orange);
+	letter-spacing: -2px;
+}
+
+section.dailypic div.links {
+	margin: 1rem 0 0 0;
+}
+
+section.dailypic div.links a {
+	color: #ecad9e;
+	padding: 0 0.3rem;
+	text-decoration: none;
+}
+
+section.dailypic div.links a i {
+	font-size: 32px;
+}
+
+section.dailypic div.figure {
+	display: flex;
+	justify-content: center;
+	width: 35%;
+	margin: 0 15% 0 0;
+}
+
+section.dailypic div.figure img {
+    /* position: relative; */
+    width: 80%;
+    display: inline-block;
+    /* object-fit: cover; */
+}
+
+
+
+@media screen and ((aspect-ratio < 1/1)) {
+	section.dailypic div.elementor-container-left {
+		font-size: 1rem;
+		margin: auto 5%;
+		flex-wrap: nowrap;
+	}
+	section.dailypic div.elementor-container-left h1 {
+		font-size: 2rem;
+	}
+	
+}
+
+@media screen and ((aspect-ratio < 4/5)) {
+	section.dailypic div.figure {
+	    display: flex;
+	    width: 35%;
+	    margin: 0 25% 2rem 40%;
+	    /* float: right; */
+	    /* justify-content: flex-end; */
+	    /* text-align: right; */
+	    /* align-items: flex-end; */
+	    justify-content: flex-end;
+	}
+	section.dailypic div.elementor-container {
+		min-height: 600px;
+		/* width: 100%; */
+		display: flex;
+		flex-direction: column;
+		margin-right: auto;
+		margin-left: auto;
+		position: relative;
+		/* -webkit-box-align: center; */
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	section.dailypic div.elementor-container-left {
+		font-size: 1rem;
+		margin: 5rem 50% 0 15%;
+		flex-wrap: nowrap;
+	}
+	
+	section.dailypic div.elementor-container-left h1 {
+		font-size: 2rem;
+	}
+	
+}
+
+
+
+/* title */
+#main{
+	/* max-width: 1280px; */
+	min-width: 420px;
+	/* min-height: 730px; */
+}
+
+#main> div.head-line {
+	text-align: center;
+	padding: 120px 0 60px 0;
+}
+
+#main> div.head-line h1 {
+	font-family: "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 64px;
+	font-weight: 600;
+	color: var(--orange);
+	letter-spacing: 2px;
+}
+
+@media screen and ((aspect-ratio < 4/5)) {
+	#main> div.head-line h1 {
+		font-size: 2rem;
+	}
+
+	
+}
+
+
+/* posts */
+
+
+#main> article.post {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	margin: 4rem auto;
+	padding: 0;
+	width: 70vw;
+	height: 55vh;
+	position: relative;
+	opacity: 1;
+}
+
+#main> article.post div.featured {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	/* flex-wrap: wrap; */
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center;
+	position: relative;
+}
+
+#main> article.post div.photo-frame {
+	display: flex;
+	justify-content: center;
+	align-items:
+	center;
+	flex-direction: column;
+	width: 40%;
+	height: 90%;
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	/* padding: 0 14px 0 14px; */
+	/* border: 0.5px solid #0000005c; */
+	box-shadow: 0 0 10px var(--shadow);
+	transition: all 0.5s ease;
+	
+	}
+
+#main> article.post div.photo-frame:hover {
+	transform: scale(1.02);
+	transition: all 0.5s ease;
+	
+}
+
+
+#main> article.post div.thumbnail {
+    display: flex;
+	position: relative;
+	
+	width: 96%;
+	height: 75%;
+}
+
+#main> article.post div.thumbnail {
+	justify-content: center;
+	flex-direction: column;
+	/* border-left: 14px solid white;
+	border-right: 14px solid white;
+	border-top: 14px solid white;
+	border-bottom: 50px solid white; */
+	box-sizing: border-box;
+	/* box-shadow: 0 0 5px var(--shadow); */
+	overflow: hidden;
+}
+
+
+#main> article.post img {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	object-fit: cover;
+}
+
+
+#main> article.post img{overflow: hidden;}
+/* times */
+#main> article.post div.times {
+	display: flex;
+	
+	justify-content: center;
+	align-items: center;
+	
+	height: 20%;
+}
+
+#main> article.post div.times span.date {
+	font-size: 46px;
+	font-weight: 200;
+	font-family: Gabriola,"SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* major */
+
+#main> article.post div.major {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: self-end;
+	width: 40%;
+	margin: 0px 0 10% 13%;
+}
+
+#main> article.post div.major h2{
+	margin: 16px 0 16px 0;
+	width: 100%;
+}
+
+#main> article.post div.major h2 a{
+	font-size: 32px;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	width: 100%;
+	/* text-overflow: ellipsis; */
+	overflow: hidden;
+	/* white-space: nowrap; */
+	outline: 0;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+}
+
+#main> article.post div.major p{
+	margin: 16px 0 16px 0;
+	width: 100%;
+	/* display: flex; */
+	/* align-items: self-end; */
+}
+
+#main> article.post div.major p a{
+	overflow: hidden;
+	max-height: 8rem;
+	font-size: 20px;
+	line-height: 1.6em;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	text-overflow: ellipsis;
+}
+
+
+
+#main> article.post div.major div.label i {
+	font-size: 20px;
+	color: #565656;
+}
+
+/* pagination */
+
+#main> ul.pagination {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+	padding: 0 0rem 4rem 0rem;
+}
+
+#main> ul.pagination li {
+	padding: 0 1rem 0 1rem;
+
+	
+}
+
+#main> ul.pagination li div.point {
+	background-color: #ffd59d;
+	border: 7px solid #ffd59d;
+	border-radius: 100%;
+}
+
+#main> ul.pagination span.current div.point {
+	background-color: var(--brown);
+	border: 7px solid var(--brown);
+}
+
+/* footer */
+footer.footer {
+	background-color: var(--brown);
+}
+footer.footer div.footer{
+	display: flex;
+	/* max-width: 1280px; */
+	min-height: 140px;
+	justify-content: center;
+	align-items: center;
+	color: var(--orange);
+}
+
+footer.footer div.footer p{
+	font-size: 14px;
+	text-align: center;
+	padding: 0.5rem 0 0rem 0;
+}

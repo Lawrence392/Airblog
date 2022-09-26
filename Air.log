@@ -1,0 +1,11 @@
+-针对id为奇数/偶数post不同的样式
+flex-direction:row/row-reverse
+x-  在freemarker中声明变量
+    改变class
+-   使用css伪元素:nth-child(even)
+
+
+-post样式
+    -code部分
+		-prism棱镜
+		-

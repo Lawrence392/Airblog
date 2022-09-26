@@ -1,0 +1,72 @@
+nav.navbar {
+    background-color: white !important;
+}
+
+
+section.archivesmain {
+    display: flex;
+    max-width: 1280px;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 5rem auto;
+}
+
+section.archivesmain div.archivesmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 30px 80px;
+    /* background: linear-gradient(to top,#fff 0,#ffffff 20%) no-repeat top; */
+    box-shadow: 0 1.25rem 3rem 0.3rem #e2e2e2c2;
+    width: calc(100% - 15.75rem);
+    min-height: 37.5rem;
+    font-family: "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: auto;
+}
+
+
+section.archivesmain div.archivesmain div.archive-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 24px 0;
+}
+
+/*article */
+
+section.archivesmain div.archivesmain div.archive-wrapper article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* vertical-align: middle; */
+    height: 44px;
+}
+
+div.archive-wrapper h2{
+    font-size: 42px;
+    height: 50px;
+    display: flex;
+    /* font-family: ivar text,sans-serif; */
+    font-weight: bold;
+    align-items: center;
+    color: var(--darkpurple);
+}
+
+div.archive-wrapper article a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+    
+}
+
+div.archive-wrapper h3{
+    font-size: 16px;
+}

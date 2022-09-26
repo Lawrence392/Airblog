@@ -1,0 +1,95 @@
+general:
+  label: 基础设置
+  items:
+    daily_pic:
+      name: daily_pic
+      label: 首页头图
+      type: attachment
+    user_nick_name:
+      name: user_nick_name
+      label: 顶部名称
+      type: text
+    user_description:
+      name: user_description
+      label: 个性标签
+      type: text
+    sidebar_header:
+      name: sidebar_header
+      label: Sidebar 顶部图片
+      type: attachment
+    footer_image:
+      name: footer_image
+      label: Sidebar 底部图片
+      type: attachment
+    copyright:
+      name: copyright
+      label: 底部版权信息
+      type: text
+    icp_filing:
+      name: icp_filing
+      label: 备案号
+      type: text
+
+sns:
+  label: 社交资料
+  items:
+    sns_email:
+      name: sns_email
+      label: Email
+      type: text
+    sns_facebook:
+      name: sns_facebook
+      label: Facebook
+      type: text
+    sns_twitter:
+      name: sns_twitter
+      label: Twitter
+      type: text
+    sns_googleplus:
+      name: sns_googleplus
+      label: Google +
+      type: text
+    sns_weibo:
+      name: sns_weibo
+      label: 微博
+      type: text
+    sns_weibo:
+      name: sns_wechat
+      label: 微信
+      type: text
+    sns_instagram:
+      name: sns_instagram
+      label: Instagram
+      type: text
+    sns_tumblr:
+      name: sns_tumblr
+      label: Tumblr
+      type: text
+    sns_github:
+      name: sns_github
+      label: Github
+      type: text
+    sns_linkedin:
+      name: sns_linkedin
+      label: Linkedin
+      type: text
+    sns_zhihu:
+      name: sns_zhihu
+      label: 知乎
+      type: text
+    sns_bilibili:
+      name: sns_bilibili
+      label: 哔哩哔哩
+      type: text
+    sns_telegram:
+      name: sns_telegram
+      label: Telegram
+      type: text
+    sns_phone:
+      name: sns_phone
+      label: phone
+      type: text
+    sns_segmentfault:
+      name: sns_segmentfault
+      label: Segmentfault
+      type: text

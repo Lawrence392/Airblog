@@ -1,0 +1,30 @@
+#wrapper > #intro > div.avatar{
+    display: block;
+    padding: 1rem;
+}
+#wrapper > #intro > div.avatar > img{
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 0 0.35em rgb(255 255 255 / 75%);
+}
+
+#wrapper > #intro > div.nickname {
+    display: block;
+    padding: 1rem;
+}
+
+
+#wrapper > #intro > div.description {
+    display: block;
+    padding: 1rem;
+}
+
+
+
+#wrapper > #intro > div.description > p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0; 
+}
+
+

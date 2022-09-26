@@ -1,0 +1,21 @@
+/* macro color */
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --lightblack: #202020;
+    --red: #F4606C;
+    --lightred: #fde0e0;
+    --orange: #ecad9ed4;
+    --green: #beedc7;
+    --lightyellow: #FAF9DE;
+    --brown: #FFF2E2;
+    --darkyellow: #D1BA74;
+    --lightgreen: #E3EDCD;
+    --lightblue:#BEE7E9;
+    --blue: #DCE2F1;
+    --purple: #E9EBFE;
+    --darkpurple: #a695fa;
+    --grey: #EAEAEF;
+    --fontgrey: #999999;
+    --shadow: #0000001A;
+}
