@@ -1,30 +1,7 @@
 <#include "module/macro.ftl">
 <@layout title="${blog_title!}">
 
-
-		<section class="dailypic">
-			<div class="elementor-container">
-				<div class="elementor-container-left">
-					<div class="name">
-						<h2>Holo</h2>
-					</div>
-					<div class="introduction">
-						<h1>${settings.user_description!}</h1>
-					</div>
-					<div class="links">
-						<a href="${settings.sns_zhihu!}" title="email"><i class="iconfont icon-zhihu"></i></a>
-						<a href="${settings.sns_bilibili!}" title="bilibili"><i class="iconfont icon-bilibili-line"></i></a>
-						<a href="${settings.sns_wechat!}" title="wechat"><i class="iconfont icon-wechat-fill"></i></a>
-						<a href="${settings.sns_github!}" title="github"><i class="iconfont icon-github-fill"></i></a>
-					</div>
-				</div>
-
-
-				<div class="figure">
-					<img src="${theme_base!}/assets/images/狼と香辛料.png" alt=" ">
-				</div>
-			</div>
-		</section>
+    <#include "module/dailypic.ftl">
 
 
 
@@ -49,10 +26,6 @@
                         </a>
                     </div>
 
-                    <#--  <div class="times">
-                        <span class="date">${post.createTime?string("yyyy-MM-dd")}</span>
-                    </div>  -->
-                    
                     <#else>
                         <div class="thumbnail">
                             <a href="${post.fullPath!}">
@@ -68,9 +41,16 @@
                         
 
                         <div class="label">
-                            <i class="iconfont">&#xe921; ${ (post.wordCount/1000) ?string["0.#"]}k</i>
+                            <span class="iconfont">&#xe921;</span>
+                            <span>
+                                ${ (post.wordCount/1000) ?string["0.#"]}k
+                            </span>
+                            <span class="iconfont date">&#xe747;</span>
+                            <span>
+                                ${post.createTime?string("yyyy-MM-dd")}
+                            </span>
                         </div>
-                    
+
                     </div>
 
                 </div>

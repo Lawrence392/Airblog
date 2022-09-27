@@ -2,11 +2,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">  
+
     <meta name="keywords" content="${meta_keywords!}"/>
     <meta name="description" content="${meta_description!}" />
-    <!--
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<!--
         公共 head 代码,详情请参考:https://docs.halo.run/zh/developer-guide/theme/public-template-tag
         包含:Favicon,自定义 head 等   -->
     <@global.head />

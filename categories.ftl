@@ -1,13 +1,40 @@
 <#include "module/macro.ftl">
-<@layout title="分类列表 - ${blog_title!}">
-    <h1>分类列表</h1>
-    <ul>
-        <@categoryTag method="list">
-            <#if categories?? && categories?size gt 0>
+<@layout title="Tags - ${blog_title!}">
+    <link rel="stylesheet" type="text/css" href="${theme_base!}/assets/css/tags.css" />
+    
+    <#include "module/dailypic.ftl">
+
+
+    <div class="tree">
+    <@categoryTag method="tree">
+            <div class="category">
                 <#list categories as category>
-                    <li><a href="${category.fullPath!}">${category.name}</a></li>
+                    <div class="category-a">
+                        <a href="${category.fullPath!}">
+                            ${category.name!}
+                        </a>
+                    </div>
+
+                    <#if category.children?? && category.children?size gt 0>
+                        <@renderCategories category.children></@renderCategories>
+                    </#if>
                 </#list>
-            </#if>
-        </@categoryTag>
-    </ul>
+            </div>
+    </@categoryTag>
+
+    <#macro renderCategories categories>
+        <div class="category-children">
+            <#list categories as category>
+                <div class="category-a">
+                    <a  href="${category.fullPath!}">
+                        ${(category.name)!}
+                    </a>
+                    <#if category.children?? && category.children?size gt 0>
+                        <@renderCategories category.children></@renderCategories>
+                    </#if>
+                </div>
+            </#list>
+    </#macro>
+    </div>
+
 </@layout>

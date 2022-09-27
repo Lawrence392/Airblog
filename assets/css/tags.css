@@ -1,0 +1,49 @@
+div.tree {
+    background-color: white;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.tree div.category {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /*center*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.tree div.category  div.category-a {
+	width: 4rem;
+	height: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	margin: 0 2rem;
+	background-color: var(--orange);
+	border-radius: 12px;
+}
+
+div.tree div.category  div.category-a a {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+div.tree div.category  div.category-a:hover {
+	transform: scale(1.02);
+	transition: all 0.5s ease;
+    
+}
