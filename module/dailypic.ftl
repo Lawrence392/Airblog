@@ -11,7 +11,7 @@
                 <h1>${settings.user_description!}</h1>
             </div>
             <div class="links">
-                <a href="${settings.sns_email!}" title="email"><i class="iconfont icon-zhihu"></i></a>
+                <a href="${settings.sns_zhihu!}" title="email"><i class="iconfont icon-zhihu"></i></a>
                 <a href="${settings.sns_bilibili!}" title="bilibili"><i class="iconfont icon-bilibili-line"></i></a>
                 <a href="${settings.sns_wechat!}" title="wechat"><i class="iconfont icon-wechat-fill"></i></a>
                 <a href="${settings.sns_github!}" title="github"><i class="iconfont icon-github-fill"></i></a>
